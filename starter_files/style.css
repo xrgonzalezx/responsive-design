@@ -116,9 +116,9 @@ section#main_content {
   background-color: #ddffff;
 }
 
-section#sidebar_content {
+#sidebar_content {
   background-color: #ffffdd;
-  
+padding: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -127,10 +127,33 @@ section#sidebar_content {
 #site_footer nav a{
   margin: 15px;
 }
-@media screen and ( min-width: 600px) {
+@media screen and ( max-width: 600px) {
   nav a {
-    /*flex-basis: 45%;*/
+    flex-basis: 45%;
   }
+  #sidebar_content {
+background-color: white;
+      display: block;
+
+  }
+  #main_nav {
+    display: block;
+
+  }
+
+  #logo{
+  text-align: center;
+}
+
+
+#sidebar_content div{
+    background-color: #ffffdd;
+    margin-top: 20px;
+}
+
+
+}
+
   /**** Desktop Styles ***********************************/
   @media screen and ( min-width: 900px) {
     nav {
